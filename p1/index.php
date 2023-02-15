@@ -9,7 +9,6 @@ if (isset($_SESSION['results'])) {
     $answer = $results['answer'];
     $palindrome = $results['palindrome'];
     $vowelCount = $results['vowelCount'];
-    $shiftLetter = $results['shiftLetter'];
 
     $_SESSION['results'] = null;
 }

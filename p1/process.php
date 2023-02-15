@@ -6,13 +6,16 @@ $answer = $_POST['answer'];
 
 function isPalindrome($inputString)
 {
-    # Removes special characters from user input
-    $userInput = preg_replace('/[^A-Za-z0-9\-]/', '', $inputString);
-    $userInput = strtolower($userInput);
+    $userInput = strtolower(preg_replace("/[^A-Za-z0-9]/", '', $inputString));
     $reverseString = strrev($userInput);
 
-    $palindrome = ($userInput === $reverseString) ? 'Yes' : 'No';
-
+    if (empty($userInput)) {
+        $palindrome = 'No';
+    } else if ($userInput === $reverseString) {
+        $palindrome = 'Yes';
+    } else {
+        $palindrome = 'No';
+    }
     return $palindrome;
 }
 

@@ -7,7 +7,7 @@ $answer = $_POST['answer'];
 function isPalindrome($inputString)
 {
     # Removes special characters from user input
-    $userInput = preg_replace('%\W%', '', $inputString);
+    $userInput = preg_replace('/[^A-Za-z0-9\-]/', '', $inputString);
     $userInput = strtolower($userInput);
     $reverseString = strrev($userInput);
 

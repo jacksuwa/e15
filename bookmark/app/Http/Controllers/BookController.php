@@ -27,4 +27,9 @@ class BookController extends Controller
     {
         return $category . ',' . $subcategory;
     }
+    #to be deleted
+    public function edit()
+    {
+        return view('books/edit');
+    }
 }

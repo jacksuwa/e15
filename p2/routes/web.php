@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuessWordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    # Eventually we’ll want to return a view with our customized home page.
-    # For now, we’ll just return a simple string
-    return '<h1>P2</h1>';
-});
+Route::get('/', [GuessWordController::class, 'welcome']);

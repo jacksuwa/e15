@@ -8,7 +8,13 @@ class pageController extends Controller
 {
     public function welcome()
     {
-        return view('pages/welcome');
+        $searchResults = session('searchResults', null);
+
+
+        return view('pages/welcome', [
+            'searchResults' => $searchResults,
+
+        ]);
     }
 
     public function contact()

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GuessWordController;
+use App\Http\Controllers\WageCalculatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,5 @@ use App\Http\Controllers\GuessWordController;
 |
 */
 
-Route::get('/', [GuessWordController::class, 'welcome']);
+Route::get('/', [WageCalculatorController::class, 'welcome']);
+Route::post('/process', [WageCalculatorController::class, 'process']);

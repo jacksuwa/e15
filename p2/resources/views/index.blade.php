@@ -36,7 +36,6 @@
             <li>The tax deduction is calculated at a flat 22 percent rate</li>
         </ul>
 
-        </fieldset>
         <fieldset>
             <label for='wageRate'> Wage Per hour:</label>
             <input type="text" id='wageRate' name='wageRate' value='{{ old('wageRate') }}'>
@@ -67,8 +66,6 @@
 
         <button type='submit'>Calculate</button>
     </form>
-
-
 
     @if (!is_null($wage))
         <p>{{ $email }} is {{ $status }} and earnings: ${{ $wage }} </p>

@@ -14,5 +14,5 @@ use App\Http\Controllers\WageCalculatorController;
 |
 */
 
-Route::get('/', [WageCalculatorController::class, 'welcome']);
+Route::get('/', [WageCalculatorController::class, 'index']);
 Route::post('/process', [WageCalculatorController::class, 'process']);

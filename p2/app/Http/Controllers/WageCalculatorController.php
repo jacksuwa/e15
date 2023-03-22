@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 
 class WageCalculatorController extends Controller
 {
-    public function welcome()
+    public function index()
     {
-
-        return view('wage-calculator/welcome', [
+        return view('/index', [
             'email' => session('email', null),
             'status' => session('status', null),
             'wage' => session('wage', null),
@@ -21,7 +20,7 @@ class WageCalculatorController extends Controller
         $request->validate([
             'email' => 'required|email',
             'status' => 'required',
-            'wageRate' => 'required|numeric',
+            'wageRate' => 'required|numeric|min:0|',
             'hours' => 'required|numeric|min:0|',
             "minutes" => 'required|numeric|min:0|max:60'
         ]);

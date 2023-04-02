@@ -2,6 +2,7 @@
 
 return [
 
+    'contact_email' => 'help@bookmark.com',
     /*
     |--------------------------------------------------------------------------
     | Default Mailer

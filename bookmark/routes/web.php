@@ -10,7 +10,7 @@ use App\Http\Controllers\PracticeController;
 
 Route::get('/example', function () {
 
-    return 'Example';
+    return 'Example and more';
 });
 
 Route::any('/practice/{n?}', [PracticeController::class, 'index']);

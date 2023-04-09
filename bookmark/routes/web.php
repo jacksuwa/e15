@@ -33,3 +33,10 @@ Route::get('/books/{slug}', [BookController::class, 'show']);
 Route::get('/books/filter/{category}/{subcategory}', [BookController::class, 'filter']);
 
 Route::get('/list', [ListController::class, 'show']);
+
+
+# Show the form to edit a specific book
+Route::get('/books/{slug}/edit', [BookController::class, 'edit']);
+
+# Process the form to edit a specific book
+Route::put('/books/{slug}', [BookController::class, 'update']);

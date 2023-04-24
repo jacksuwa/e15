@@ -7,10 +7,86 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Book;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Author;
+use App\Models\User;
 
 
 class PracticeController extends Controller
 {
+
+    /**
+     * Many to Many relationship: UPDATE
+     */
+    public function practice18()
+    {
+        # As an example, grab a user we know has books on their list
+        $user = User::where('email', '=', 'jill@harvard.edu')->first();
+
+        # Grab the first book on their list
+        $book = $user->books()->first();
+
+        # Update and save the notes for this relationship
+        $book->pivot->notes = "New note...";
+        $book->pivot->save();
+
+        # Confirm it worked
+        return 'Update complete. Check the `book_user` table to confirm.';
+    }
+
+    /**
+     * Many to Many relationship: DELETE
+     */
+
+    public function practice17()
+    {
+        # As an example, grab a user we know has books on their list
+        $user = User::where('email', '=', 'jill@harvard.edu')->first();
+
+        # Grab the first book on their list
+        $book = $user->books()->first();
+
+        # Delete the relationship
+        $book->pivot->delete();
+
+        # Confirm it worked
+        return 'Delete complete. Check the `book_user` table to confirm.';
+    }
+    public function practice16()
+    {
+        $user = User::where('email', '=', 'jamal@harvard.edu')->first();
+        $book = Book::where('title', '=', 'The Great Gatsby')->first();
+
+        $user->books()->save($book, ['notes' => 'I liked this book a lot.']);
+    }
+
+    /**
+     * Many to Many relationship: Eager load
+     */
+    public function practice15()
+    {
+        $books = Book::with('users')->get();
+
+        foreach ($books as $book) {
+            dump($book->title);
+            foreach ($book->users as $user) {
+                dump($user->toArray());
+            }
+        }
+    }
+
+
+    public function practice14()
+    {
+        $book = Book::where('title', '=', 'The Great Gatsby')->first();
+
+        dump($book->users->toArray());
+    }
+
+    public function practice13()
+    {
+        $user = User::where('email', '=', 'jamal@harvard.edu')->first();
+
+        dump($user->books->toArray());
+    }
 
     public function practice12()
     {

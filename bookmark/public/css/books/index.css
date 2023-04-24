@@ -1,4 +1,5 @@
-#books {
+Skip to content Pull requests Issues Codespaces Marketplace Explore @jacksuwa susanBuck / e15 Public Fork your own copy of susanBuck/e15 Code Issues Pull requests Actions Projects Security Insights Beta Try the new code view e15/bookmark/public/css/books/index.css @susanBuck susanBuck Bookmark at the start of Week 7 Latest commit 2a2e43c Mar 6,
+2023 History 1 contributor 46 lines (40 sloc) 678 Bytes #books {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,3 +45,6 @@ a:hover.book {
     height: 175px;
     margin: 10px;
 }
+
+Footer © 2023 GitHub,
+Inc. Footer navigation Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About

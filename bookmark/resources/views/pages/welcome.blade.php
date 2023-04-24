@@ -78,4 +78,4 @@
             </div>
         @endif
     @endif
-@endsection;
+@endsection

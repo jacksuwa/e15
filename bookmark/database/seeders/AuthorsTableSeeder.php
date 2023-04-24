@@ -9,6 +9,7 @@ use Faker\Factory; # ← NEW
 
 class AuthorsTableSeeder extends Seeder
 {
+    private $faker;
     /**
      * Run the database seeds.
      *

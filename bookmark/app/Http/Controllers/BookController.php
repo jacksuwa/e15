@@ -158,8 +158,8 @@ class BookController extends Controller
             return redirect('/books')->with([
                 'flash-alert' => 'Book not found'
             ]);
-            return view('books/delete', ['book =>$book']);
         }
+        return view('books/delete', ['book' => $book]);
     }
     /**
      * Deletes the book
@@ -168,6 +168,7 @@ class BookController extends Controller
     public function destroy($slug)
     {
         $book = Book::findBySlug($slug);
+        $book->users()->detach();
 
         $book->delete();
 

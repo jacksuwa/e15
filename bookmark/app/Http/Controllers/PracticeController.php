@@ -12,7 +12,13 @@ use App\Models\User;
 
 class PracticeController extends Controller
 {
+    public function practice19(Request $request)
+    {
 
+        $books = $request->user()->books->sortByDesc('created_at');
+
+        dump($books);
+    }
     /**
      * Many to Many relationship: UPDATE
      */

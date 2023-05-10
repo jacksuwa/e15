@@ -15,6 +15,6 @@
     @endif
 
     <div class='title'>
-        Welcome to Item Inventory Management
+        <h2> Welcome to Item Inventory Management </h2>
     </div>
 @endsection

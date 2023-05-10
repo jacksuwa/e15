@@ -28,8 +28,8 @@ The application has 3 total tables (users, items, customers)
 
 
  ## Tests
- '''
- Codeception PHP Testing Framework v4.2.2 https://helpukrainewin.org
+
+Codeception PHP Testing Framework v4.2.2 https://helpukrainewin.org
 Powered by PHPUnit 8.5.28 #StandWithUkraine
 
 Acceptance Tests (1) -------------------------------------------------------------------------------------------------------------------------------
@@ -73,4 +73,3 @@ Acceptance Tests (22) ----------------------------------------------------------
 Time: 23.56 seconds, Memory: 18.66 MB
 
 OK (22 tests, 33 assertions)
-```

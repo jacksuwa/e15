@@ -21,6 +21,7 @@ The application has 3 total tables (users, items, customers)
 
 ## Outside resources
 <https://www.w3schools.com/>
+
 <https://laravel.com/api/9.x/Illuminate/Database/Eloquent/SoftDeletes.html>
 
 

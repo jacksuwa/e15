@@ -22,11 +22,11 @@ class ItemsTableSeeder extends Seeder
         $this->faker = Factory::create();
         # Array of product data to add
         $items = [
-            ['Conditioner', 9.10],
-            ['Bar soap', 4.00],
-            ['Lotion', 10.30],
-            ['Deodorant ', 5.50],
-            ['Shampoo', 7.20]
+            ['Laptop', 1200.10],
+            ['Watch', 229.00],
+            ['Sunglasses', 70.30],
+            ['Conditioner ', 39.48],
+            ['Vacuum', 199.99]
 
         ];
 

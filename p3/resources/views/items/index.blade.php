@@ -12,8 +12,12 @@
 @section('content')
     <h1 test='all-items-heading'>All Items</h1>
 
-    <a href="/items/create"> Add new item</a>
-    <a href="/items/archive"> Archive</a>
+    <a class='link' href='/items/create'>
+        <h4> Add new item </h4>
+    </a>
+    <a href='/items/archive'>
+        <h4> Archive </h4>
+    </a>
     <table>
         <thead>
             <tr>

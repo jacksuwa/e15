@@ -21,6 +21,6 @@ class ItemEditPageCest
         $I->fillField('[test=price-input]', '20');
         $I->click('[test=update-button]');
 
-        $I->see('test');
+        $I->see('The item test was updated');
     }
 }

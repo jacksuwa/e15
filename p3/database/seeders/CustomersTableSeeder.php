@@ -19,9 +19,9 @@ class CustomersTableSeeder extends Seeder
     {
         # Array of customer data to add
         $customers = [
-            ['Test1', 'Asf', '24 asdf drive toronto, asa, TX 78733', '5129477936'],
-            ['test2', 'asa', 'no good side', '5129477937'],
-            ['test3', 'asa', '23 trial error, asa, sa324', '5129478938'],
+            ['Eli', 'Weber', '9499 137 Ave NW, Edmonton Alberta, T5E 6K9, Canada', '(204) 942-1000'],
+            ['Houston', 'Greene', '40 Dalhousie, Amherstburg, Ontario, N9V 1X3, Canada', '(519) 736-1111'],
+            ['Lisa', 'Taylor', '2430 Bank St, Ottawa, Ontario, K1V 0T7, Canada', '(613) 738-1555'],
         ];
 
         $count = count($customers);

@@ -4,6 +4,10 @@
     <link href='/css/pages/table-design.css' rel='stylesheet'>
 @endsection
 
+@section('title')
+    Item {{ $item->id }} - {{ $item->name }}
+@endsection
+
 @section('content')
 
 

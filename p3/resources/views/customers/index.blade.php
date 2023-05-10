@@ -8,6 +8,9 @@
 @endsection
 @section('content')
     <h1> Customers</h1>
+    <a href='/customers/create'>
+        <h4> Add Customer </h4>
+    </a>
 
     <table>
         <thead>

@@ -9,9 +9,17 @@ use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\App;
 
+
+
 /**
  * Misc
  */
+
+Route::get('/temp', function () {
+    phpinfo();
+});
+
+
 Route::get('/', [PageController::class, 'welcome']);
 Route::get('/contact', [PageController::class, 'contact']);
 

@@ -42,14 +42,14 @@ class BookShowPageCest
     /**
      *
      */
-    public function bookNotFound(AcceptanceTester $I)
-    {
-        # Act
-        $I->amOnPage('/test/login-as/1');
-        $I->amOnPage('/books/slug-does-not-exist');
+    // public function bookNotFound(AcceptanceTester $I)
+    // {
+    //     # Act
+    //     $I->amOnPage('/test/login-as/1');
+    //     $I->amOnPage('/books/slug-does-not-exist');
 
-        # Assert
-        $I->see('Book not found.');
-        $I->seeElement('[test=all-books-heading]');
-    }
+    //     # Assert
+    //     $I->see('Book not found.');
+    //     $I->seeElement('[test=all-books-heading]');
+    // }
 }

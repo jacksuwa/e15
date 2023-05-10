@@ -17,7 +17,7 @@
     @endif
 
     <p>
-        Welcome to Bookmark - an online book journal that lets you track and share a history of books you’ve read.
+        Welcome to Bookmark - an online book jounral that lets you track and share a history of books you’ve read.
     </p>
 
     <form method='GET' action='/search'>
@@ -27,7 +27,7 @@
         <fieldset>
             <label for='searchTerms'>
                 Search terms:
-                <input type='text' name='searchTerms' value='{{ old('searchTerms') }}'>
+                <input type='text' name='searchTerms' test='search-input' value='{{ old('searchTerms') }}'>
             </label>
         </fieldset>
 
@@ -37,7 +37,7 @@
             </label>
 
             <input type='radio' name='searchType' id='title' value='title'
-                {{ old('searchType') == 'title' ? 'checked' : '' }}>
+                {{ old('searchType', 'title') == 'title' ? 'checked' : '' }}>
             <label for='title'> Title</label>
 
             <input type='radio' name='searchType' id='author' value='author'
@@ -46,8 +46,7 @@
 
         </fieldset>
 
-
-        <button type='submit' class='btn btn-primary'>Search</button>
+        <button type='submit' test='search-button' class='btn btn-primary'>Search</button>
 
         @if (count($errors) > 0)
             <ul class='alert alert-danger'>
@@ -72,10 +71,11 @@
 
                 <ul class='clean-list'>
                     @foreach ($searchResults as $slug => $book)
-                        <li><a href='/books/{{ $slug }}'> {{ $book['title'] }}</a></li>
+                        <li><a test='search-result-link' href='/books/{{ $slug }}'> {{ $book['title'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
         @endif
     @endif
+
 @endsection

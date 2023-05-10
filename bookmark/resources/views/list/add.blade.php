@@ -9,12 +9,11 @@
     <h2>{{ $book->title }}</h2>
 
     <form method='POST' action='/list/{{ $book->slug }}/save'>
-        <div class='details'>* Required fields</div>
         {{ csrf_field() }}
 
         <label for='notes'>YOUR NOTES ON THIS BOOK</label>
-        <textarea name='notes'>{{ old('notes') }}</textarea>
+        <textarea name='notes' test='notes-textarea'>{{ old('notes') }}</textarea>
 
-        <button class='btn btn-primary'>Add</button>
+        <button type='submit' test='add-to-list-button' class='btn btn-primary'>Add to your list</button>
     </form>
 @endsection

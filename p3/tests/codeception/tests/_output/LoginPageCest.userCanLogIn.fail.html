@@ -1,0 +1,72 @@
+<!doctype html>
+ <html lang='en'>
+
+ <head>
+     <title>    Admin Login
+</title>
+     <meta charset='utf-8'>
+
+
+     <link href='/css/inventory.css' type='text/css' rel='stylesheet'>
+
+      </head>
+
+ <body>
+
+     
+     <header>
+         <a href='/'><img src='/images/inventory.jpg' id='logo' alt='Inventory Management'></a>
+
+         <nav>
+             <ul>
+
+                 <li><a href='/'>Home</a></li>
+
+                 
+                 <li><a href='/contact'>Contact</a></li>
+
+                 <li>
+                                              <a test='login-link' href='/login'>Login</a>
+                                      </li>
+
+
+             </ul>
+         </nav>
+     </header>
+
+
+     <section id='main'>
+             <h2>Admin Login</h2>
+
+    <a href='/register'> Register Here</a>
+
+    <form method='POST' action='http://e15p3.jacksuwa.online/login'>
+
+        <input type="hidden" name="_token" value="NMWSd4njZIK0AUWuq5yLJJ98XV4PIyWuwffhPa9n">
+        <fieldset>
+            <label for='email'>E-Mail Address</label>
+            <input id='email' test='email-input' type='email' name='email' value='jill@harvard.edu' required
+                autofocus>
+            <div test='error-field-email' class='alert alert-danger error'>These credentials do not match our records.</div>
+
+            <label for='password'>Password</label>
+            <input id='password' test='password-input' type='password' name='password' required>
+                    </fieldset>
+        <label>
+            <input type='checkbox' name='remember' > Remember Me
+        </label>
+
+        <button type='submit' test='login-button' class='btn btn-primary'>Login</button>
+        <br>
+        <a class='btn btn-link' href='/contact'>Forgot Your Password?</a>
+
+    </form>
+
+    <hr>
+     </section>
+
+
+
+ </body>
+
+ </html>

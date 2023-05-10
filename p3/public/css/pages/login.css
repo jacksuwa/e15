@@ -1,0 +1,40 @@
+.login-form {
+    background: #fff;
+    width: 600px;
+    margin: 65px auto;
+
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 18px;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #e8e9ec;
+    color: #777;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+}
+
+a.link {
+    text-decoration: none;
+    color: #747474;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+input.input-type {
+    font-size: 16px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    width: 60%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid #747474;
+
+}

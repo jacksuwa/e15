@@ -41,4 +41,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Return the parking belongs information.
+     *
+     * belongs to many relationship
+     */
+    public function items()
+    {
+        return $this->belongsToMany('App\Models\Item')
+            ->withTimestamps()
+            ->withPivot('comments');
+    }
 }

@@ -1,0 +1,100 @@
+<!doctype html>
+ <html lang='en'>
+
+ <head>
+     <title>Items Management</title>
+     <meta charset='utf-8'>
+
+
+     <link href='/css/inventory.css' type='text/css' rel='stylesheet'>
+
+         
+ </head>
+
+ <body>
+
+     
+     
+          
+
+     <header>
+         <a href='/'><img src='/images/inventory.jpg' id='logo' alt='Items Management'></a>
+
+         <nav>
+             <ul>
+
+                 <li><a href='/'>Home</a></li>
+
+                                      <li><a href='/items'>All Items</a></li>
+                     <li><a href='/items/create'>Add a new Item</a></li>
+                     <li><a href='/list'>Your Items List</a></li>
+                     <li><a href='/customers'>View Customers</a></li>
+                 
+                 <li><a href='/contact'>Contact</a></li>
+
+                 <li>
+                                              <form method='POST' id='logout' action='/logout'>
+                             <input type="hidden" name="_token" value="po4J5mSbCtSfDn2HuB3aKXSvI3Z2eL3pUIJlAJRK">
+
+
+
+                             <button type='submit' class='button-link' test='logout-button'>
+                                 Logout
+                             </button>
+
+
+                         </form>
+                                      </li>
+
+
+             </ul>
+         </nav>
+     </header>
+
+
+     <section id='main'>
+         
+
+            <table>
+            <thead>
+                <tr>
+                    <td>Item Id</td>
+                    <td>Item Name</td>
+                    <td>Unit Price $</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 2</td>
+                    <td> Bar soap</td>
+                    <td> 4.00</td>
+                    <td>
+                        <a href='/items/2/edit'>
+                            <button test='edit-button' type='submit'>
+                                Edit</button></a>
+                    </td>
+                    <td>
+                        <a href='/items/2/delete'>
+                            <button test='delete-button2' type='submit'>
+                                Delete</button></a>
+                    </td>
+                                            <td>
+                            <form method='POST' action='/list/2/destroy'>
+    <input type="hidden" name="_token" value="po4J5mSbCtSfDn2HuB3aKXSvI3Z2eL3pUIJlAJRK">
+    <input type="hidden" name="_method" value="delete">
+
+    <button type='submit' test='remove-from-list-button-2'>
+        Remove from the item's list
+    </button>
+</form>
+                        </td>
+                                </tbody>
+        </table>
+         </section>
+
+
+
+ </body>
+
+ </html>

@@ -1,0 +1,89 @@
+<!doctype html>
+ <html lang='en'>
+
+ <head>
+     <title>    Your Items List
+</title>
+     <meta charset='utf-8'>
+
+
+     <link href='/css/inventory.css' type='text/css' rel='stylesheet'>
+
+         <link href='/css/list/show.css' rel='stylesheet'>
+ </head>
+
+ <body>
+
+     
+     
+              <div class="alert alert-success">
+             The item  was added to your item list.
+         </div>
+          
+
+     <header>
+         <a href='/'><img src='/images/inventory.jpg' id='logo' alt='Items Management'></a>
+
+         <nav>
+             <ul>
+
+                 <li><a href='/'>Home</a></li>
+
+                                      <li><a href='/items'>All Items</a></li>
+                     <li><a href='/items/create'>Add a new Item</a></li>
+                     <li><a href='/list'>Your Items List</a></li>
+                     <li><a href='/customers'>View Customers</a></li>
+                 
+                 <li><a href='/contact'>Contact</a></li>
+
+                 <li>
+                                              <form method='POST' id='logout' action='/logout'>
+                             <input type="hidden" name="_token" value="phq2lAOlp5hYjueNEcCdm9qBp3Ns8bRHnQvxayOZ">
+
+
+
+                             <button type='submit' class='button-link' test='logout-button'>
+                                 Logout
+                             </button>
+
+
+                         </form>
+                                      </li>
+
+
+             </ul>
+         </nav>
+     </header>
+
+
+     <section id='main'>
+         
+                        <a href='/items/4'>
+                <h2> ID: 4 - Deodorant  </h2>
+            </a>
+
+            
+            
+
+            
+            <form method='POST' action='/list/4/update'>
+                <input type="hidden" name="_token" value="phq2lAOlp5hYjueNEcCdm9qBp3Ns8bRHnQvxayOZ">
+                <input type="hidden" name="_method" value="put">
+                <textarea name='comments' test='comments-textarea-4'>Ut enim ad minim veniam, quis nostrud.</textarea>
+                <br>
+                <button type='submit' test='update-button-4'>Update
+                    comments</button>
+                <a href='/items/4/delete'>
+                    <button>Delete</button> </a>
+            </form>
+            <p class='added'>
+                Added 1 second ago
+            </p>
+            
+     </section>
+
+
+
+ </body>
+
+ </html>

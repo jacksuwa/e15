@@ -1,0 +1,73 @@
+<!doctype html>
+ <html lang='en'>
+
+ <head>
+     <title>    Add an Item
+</title>
+     <meta charset='utf-8'>
+     <link href='/css/main.css' type='text/css' rel='stylesheet'>
+
+         <link href='/css/pages/modify-form.css' rel='stylesheet'>
+ </head>
+
+ <body>
+     
+          
+
+     <header>
+         <a href='/'><img src='/images/.jpg' id='logo' alt='Item Inventory Management'></a>
+
+         <nav>
+             <ul>
+
+                 <li><a href='/'>Home</a></li>
+
+                                      <li><a href='/items'>All Items</a></li>
+                     <li><a href='/list'>Your Items List</a></li>
+                     <li><a href='/customers'>Customers</a></li>
+                 
+                 <li><a href='/contact'>Contact</a></li>
+                 <li>
+                                              <form method='POST' id='logout' action='/logout'>
+                             <input type="hidden" name="_token" value="956LVF1yqa5TZXtnbk660phFeJpI2enB3xlSyH12">
+
+                             <button type='submit' class='button-link' test='logout-button'>
+                                 Logout
+                             </button>
+                         </form>
+                                      </li>
+             </ul>
+         </nav>
+     </header>
+
+
+     <section id='main'>
+             <div class='modify-form'>
+        <h1>Add an Item</h1>
+
+        <form method='post' action='/items'>
+            <input type="hidden" name="_token" value="956LVF1yqa5TZXtnbk660phFeJpI2enB3xlSyH12">
+            <label>Name</label>
+            <input test='name-input' type='text' name='name' value='''>
+            <div test='error-field-name' class='alert alert-danger error'>The name field is required.</div>
+
+            <label> Price ($)</label>
+            <input test='price-input' type='text' name='price' value=''>
+            <div test='error-field-price' class='alert alert-danger error'>The price field is required.</div>
+
+            <button test='submit-button' type='submit'>Add</button>
+        </form>
+
+        <a href='/items/'>
+            <button>Back</button>
+        </a>
+
+                    <div test='global-error-feedback'>
+                Please correct the above errors.
+            </div>
+            </div>
+     </section>
+
+ </body>
+
+ </html>

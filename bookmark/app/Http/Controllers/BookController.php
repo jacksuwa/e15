@@ -120,6 +120,7 @@ class BookController extends Controller
         $book = Book::where('slug', '=', $slug)->first();
 
         $authors = Author::getForDropdown();
+        // $authors = Author::orderBy('last_name')->select(['id', 'first_name', 'last_name'])->get();
 
         if (!$book) {
             return redirect('/books')->with(['flash-alert' => 'Book not found.']);

@@ -1,0 +1,128 @@
+<!doctype html>
+ <html lang='en'>
+
+ <head>
+     <title>    Your Items List
+</title>
+     <meta charset='utf-8'>
+
+
+     <link href='/css/inventory.css' type='text/css' rel='stylesheet'>
+
+         <link href='/css/list/show.css' rel='stylesheet'>
+ </head>
+
+ <body>
+
+     
+     
+          
+
+     <header>
+         <a href='/'><img src='/images/inventory.jpg' id='logo' alt='Items Management'></a>
+
+         <nav>
+             <ul>
+
+                 <li><a href='/'>Home</a></li>
+
+                                      <li><a href='/items'>All Items</a></li>
+                     <li><a href='/items/create'>Add a new Item</a></li>
+                     <li><a href='/list'>Your Items List</a></li>
+                     <li><a href='/customers'>View Customers</a></li>
+                 
+                 <li><a href='/contact'>Contact</a></li>
+
+                 <li>
+                                              <form method='POST' id='logout' action='/logout'>
+                             <input type="hidden" name="_token" value="LBe5D4Gx3kvg5QQuPfgxSMU3BM8FjxXZ4AldsAIt">
+
+
+
+                             <button type='submit' class='button-link' test='logout-button'>
+                                 Logout
+                             </button>
+
+
+                         </form>
+                                      </li>
+
+
+             </ul>
+         </nav>
+     </header>
+
+
+     <section id='main'>
+         
+                        <a href='/items/1'>
+                <h2> ID: 1 - Conditioner </h2>
+            </a>
+
+            
+            
+
+            
+            <form method='POST' action='/list/1/update'>
+                <input type="hidden" name="_token" value="LBe5D4Gx3kvg5QQuPfgxSMU3BM8FjxXZ4AldsAIt">
+                <input type="hidden" name="_method" value="put">
+                <textarea name='comments' test='comments-textarea-1'>I love this parking garage 1</textarea>
+                <br>
+                <button type='submit' test='update-button-1'>Update
+                    comments</button>
+                <a href='/items/1/delete'>
+                    <button>Delete</button> </a>
+            </form>
+            <p class='added'>
+                Added 1 second ago
+            </p>
+                    <a href='/items/2'>
+                <h2> ID: 2 - Bar soap </h2>
+            </a>
+
+            
+            
+
+            
+            <form method='POST' action='/list/2/update'>
+                <input type="hidden" name="_token" value="LBe5D4Gx3kvg5QQuPfgxSMU3BM8FjxXZ4AldsAIt">
+                <input type="hidden" name="_method" value="put">
+                <textarea name='comments' test='comments-textarea-2'>I love this parking garage 2</textarea>
+                <br>
+                <button type='submit' test='update-button-2'>Update
+                    comments</button>
+                <a href='/items/2/delete'>
+                    <button>Delete</button> </a>
+            </form>
+            <p class='added'>
+                Added 1 second ago
+            </p>
+                    <a href='/items/3'>
+                <h2> ID: 3 - Lotion </h2>
+            </a>
+
+            
+            
+
+            
+            <form method='POST' action='/list/3/update'>
+                <input type="hidden" name="_token" value="LBe5D4Gx3kvg5QQuPfgxSMU3BM8FjxXZ4AldsAIt">
+                <input type="hidden" name="_method" value="put">
+                <textarea name='comments' test='comments-textarea-3'>I love this parking garage 3</textarea>
+                <br>
+                <button type='submit' test='update-button-3'>Update
+                    comments</button>
+                <a href='/items/3/delete'>
+                    <button>Delete</button> </a>
+            </form>
+            <p class='added'>
+                Added 1 second ago
+            </p>
+            
+     </section>
+
+
+
+ </body>
+
+ </html>

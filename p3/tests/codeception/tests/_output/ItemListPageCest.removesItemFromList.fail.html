@@ -1,0 +1,98 @@
+<!doctype html>
+ <html lang='en'>
+
+ <head>
+     <title>Items Management</title>
+     <meta charset='utf-8'>
+
+
+     <link href='/css/inventory.css' type='text/css' rel='stylesheet'>
+
+         
+ </head>
+
+ <body>
+
+     
+     
+              <div class="alert alert-success">
+             Item was removed from your list
+         </div>
+          
+
+     <header>
+         <a href='/'><img src='/images/inventory.jpg' id='logo' alt='Items Management'></a>
+
+         <nav>
+             <ul>
+
+                 <li><a href='/'>Home</a></li>
+
+                                      <li><a href='/items'>All Items</a></li>
+                     <li><a href='/items/create'>Add a new Item</a></li>
+                     <li><a href='/list'>Your Items List</a></li>
+                     <li><a href='/customers'>View Customers</a></li>
+                 
+                 <li><a href='/contact'>Contact</a></li>
+
+                 <li>
+                                              <form method='POST' id='logout' action='/logout'>
+                             <input type="hidden" name="_token" value="BDg0WXxdfn8XvOxtNEkfTo43oHIhE2CObq0jBILJ">
+
+
+
+                             <button type='submit' class='button-link' test='logout-button'>
+                                 Logout
+                             </button>
+
+
+                         </form>
+                                      </li>
+
+
+             </ul>
+         </nav>
+     </header>
+
+
+     <section id='main'>
+         
+
+            <table>
+            <thead>
+                <tr>
+                    <td>Item Id</td>
+                    <td>Item Name</td>
+                    <td>Unit Price $</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td> Conditioner</td>
+                    <td> 9.10</td>
+                    <td>
+                        <a href='/items/1/edit'>
+                            <button test='edit-button' type='submit'>
+                                Edit</button></a>
+                    </td>
+                    <td>
+                        <a href='/items/1/delete'>
+                            <button test='delete-button1' type='submit'>
+                                Delete</button></a>
+                    </td>
+                                            <td>
+                            <a href='/list/1/add'>
+                                <button test='add-to-list-button' type='submit'>
+                                    Add to your item list</button></a>
+                        </td>
+                                </tbody>
+        </table>
+         </section>
+
+
+
+ </body>
+
+ </html>

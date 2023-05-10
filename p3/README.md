@@ -28,48 +28,37 @@ The application has 3 total tables (users, items, customers)
 
 
  ## Tests
-
-Codeception PHP Testing Framework v4.2.2 https://helpukrainewin.org
-Powered by PHPUnit 8.5.28 #StandWithUkraine
-
-Acceptance Tests (1) -------------------------------------------------------------------------------------------------------------------------------
-✔ ItemEditPageCest: Items edit (1.29s)
-----------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Time: 1.42 seconds, Memory: 18.66 MB
-
-OK (1 test, 4 assertions)
-root@hes:/var/www/e15/p3/tests/codeception# codecept run acceptance --fail-fast
+```
 Codeception PHP Testing Framework v4.2.2 https://helpukrainewin.org
 Powered by PHPUnit 8.5.28 #StandWithUkraine
 
 Acceptance Tests (22) ------------------------------------------------------------------------------------------------------------------------------
-✔ CustomerCreatePageCest: Adds a new customer (1.24s)
-✔ CustomerCreatePageCest: Shows validation (1.06s)
-✔ CustomerEditPageCest: Customer edit (1.17s)
-✔ ItemCreatePageCest: Adds a new item (1.25s)
-✔ ItemCreatePageCest: Shows validation (1.17s)
-✔ ItemEditPageCest: Items edit (1.23s)
+✔ CustomerCreatePageCest: Adds a new customer (1.21s)
+✔ CustomerCreatePageCest: Shows validation (0.98s)
+✔ CustomerEditPageCest: Customer edit (1.15s)
+✔ ItemCreatePageCest: Adds a new item (1.62s)
+✔ ItemCreatePageCest: Shows validation (1.26s)
+✔ ItemEditPageCest: Items edit (1.25s)
 ✔ ItemIndexPageCest: Shows items (1.13s)
-✔ ItemIndexPageCest: Shows new item (1.11s)
-✔ ItemListPageCest: Shows empty list (1.04s)
-✔ ItemListPageCest: Adds item to list (1.10s)
-✔ ItemListPageCest: Removes item from list (1.01s)
-✔ ItemListPageCest: Update item on list (1.03s)
-✔ ItemShowPageCest: Shows item (1.00s)
-✔ ItemShowPageCest: Deletes item (0.96s)
-✔ ItemShowPageCest: Item not found (0.89s)
-✔ SoftDeleteFeatureCest: Permanently deletes item (0.90s)
-✔ UserFeatureCest: User can register (1.14s)
-✔ UserFeatureCest: Registration is validated (0.91s)
-✔ UserFeatureCest: User can log in (1.11s)
-✔ UserFeatureCest: User can logout (0.95s)
-✔ UserFeatureCest: Login is validated (0.98s)
-✔ UserFeatureCest: Guests cant visit restricted pages (0.92s)
+✔ ItemIndexPageCest: Shows new item (1.19s)
+✔ ItemListPageCest: Shows empty list (0.95s)
+✔ ItemListPageCest: Adds item to list (0.96s)
+✔ ItemListPageCest: Removes item from list (0.97s)
+✔ ItemListPageCest: Update item on list (1.02s)
+✔ ItemShowPageCest: Shows item (0.83s)
+✔ ItemShowPageCest: Deletes item (0.95s)
+✔ ItemShowPageCest: Item not found (0.92s)
+✔ SoftDeleteFeatureCest: Permanently deletes item (0.93s)
+✔ UserFeatureCest: User can register (0.94s)
+✔ UserFeatureCest: Registration is validated (0.87s)
+✔ UserFeatureCest: User can log in (1.17s)
+✔ UserFeatureCest: User can logout (0.89s)
+✔ UserFeatureCest: Login is validated (0.92s)
+✔ UserFeatureCest: Guests cant visit restricted pages (0.85s)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Time: 23.56 seconds, Memory: 18.66 MB
+Time: 23.22 seconds, Memory: 18.66 MB
 
 OK (22 tests, 33 assertions)
+```
